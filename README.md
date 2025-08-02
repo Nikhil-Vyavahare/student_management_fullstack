@@ -81,8 +81,8 @@ A simple web application for managing student data. Built using **Spring Boot** 
 ![Form Page](screenshots/form2.png)
 
 ### 📝 Update Student
-![Update Page](screenshots/update.png)
 ![Update Page](screenshots/update2.png)
+![Update Page](screenshots/update.png)
 
 ### 🗑️ Delete Student
 ![Delete Page](screenshots/delete.png)
