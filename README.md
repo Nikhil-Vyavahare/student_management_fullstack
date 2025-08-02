@@ -78,7 +78,7 @@ A simple web application for managing student data. Built using **Spring Boot** 
   ![Form Page](screenshots/form2.png)
 
 ### 📑 View All Students
-![View Page](screenshots/view.png)
+![Form Page](screenshots/form2.png)
 
 ### 📝 Update Student
 ![Update Page](screenshots/update.png)
