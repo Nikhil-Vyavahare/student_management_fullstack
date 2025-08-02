@@ -20,10 +20,9 @@ A simple web application for managing student data. Built using **Spring Boot** 
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Live UI Demo
 
 🔗 Live GitHub Hosted Link: https://nikhil-vyavahare.github.io/student_management_fullstack/  
-*(Replace with your actual GitHub Pages link)*
 
 ---
 
@@ -49,13 +48,6 @@ A simple web application for managing student data. Built using **Spring Boot** 
 
 - 🗑️ **Delete Students**  
   Remove student records securely by ID.
-
----
-
-## 🚀 Live UI Demo
-
-🔗 Live GitHub Hosted Link: https://nikhil-vyavahare.github.io/student_management_fullstack/  
-*(Replace with your actual GitHub Pages link)*
 
 ---
 
