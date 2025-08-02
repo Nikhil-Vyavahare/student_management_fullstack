@@ -20,7 +20,7 @@ import com.example.student_curd.service.StudentService;
 
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "http://localhost:5500")
 @RequestMapping("students")
 public class Controller {
 	
@@ -56,3 +56,4 @@ public class Controller {
 
 
 }
+
