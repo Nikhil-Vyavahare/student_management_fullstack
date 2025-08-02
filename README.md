@@ -49,6 +49,57 @@ A simple web application for managing student data. Built using **Spring Boot** 
 
 ### 🗑️ Delete Student
 ![Delete Page](screenshots/delete.png)
+![Delete2 Page](screenshots/delete2.png)
+
+---
+
+## 📌 Features
+
+- 📋 **Register Students**  
+  Add new students with full personal and academic details.
+
+- 🔍 **View Students**  
+  Fetch and display all student data in a dynamic table.
+
+- ✏️ **Update Info**  
+  Update existing student information based on Student ID.
+
+- 🗑️ **Delete Students**  
+  Remove student records securely by ID.
+
+---
+
+## 🚀 Live Demo
+
+🔗 Live GitHub Hosted Link: https://nikhil-vyavahare.github.io/student_management_fullstack/  
+*(Replace with your actual GitHub Pages link)*
+
+---
+
+## 🧠 Technologies Used
+
+- **Backend:** Spring Boot, Java
+- **Frontend:** HTML, CSS, JavaScript (Vanilla)
+- **Data Format:** JSON
+- **HTTP Client:** Fetch API
+
+---
+
+## 🖼️ Screenshots
+
+### 🏠 Home Page
+![Home Page](screenshots/home.png)
+
+### 📑 View All Students
+![View Page](screenshots/view.png)
+
+### 📝 Update Student
+![Update Page](screenshots/update.png)
+
+### 🗑️ Delete Student
+![Delete Page](screenshots/delete.png)
+![Delete Page](screenshots/delete2.png)
+![Delete Page](screenshots/delete3.png)
 
 ---
 
