@@ -98,7 +98,7 @@ A simple web application for managing student data. Built using **Spring Boot** 
 
 ### Frontend (HTML/JS/CSS)
 
-1. Open `index.html` using **Live Server** extension in VS Code or any local server.
+1. Open `index.html` using `http://localhost:5500/index.html`.
 2. Ensure CORS is enabled (`@CrossOrigin`) in your controller (✅ Done).
 
 ---
