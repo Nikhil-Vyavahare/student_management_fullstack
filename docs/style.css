@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f6f8;
+
+}
+/*landing page*/
+header{
+    background: #007bff ;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 40px ;
+    height: 10%;
+    font-weight: 700;
+
+}
+.inro{
+    text-align: center;
+    padding: 40px;
+}
+.inro p{
+    max-width: 720px;
+    font-size: 1.2rem;
+    margin: auto;
+}
+.feature{
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    border: 1px solid #ccc;
+    border-radius:  10px;
+    font-size: 15px;
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 30px;
+}
+
+.card h3{
+    padding: 20px;
+}
+.card p{
+    margin: 10px  auto 40px auto;
+    
+}
+.card a{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    background-color: #007bff;
+    border: none;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.card a:hover{
+    background-color: #0056b3;
+}
+.footer{
+    background-color: #222;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding: 30px;
+    width: 100%;
+    padding: 32px;
+    
+}
+.footer-container p {
+    padding: 5px;
+}
+.back-btn:hover{
+    background-color: #0056b3;
+}
+/*Registration Form*/
+.container{
+    width: 50vw;
+    border: 2px solid black ;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 10px ;
+}
+label{
+    display: block;
+    margin: 2px;
+    padding: 5px;
+    font-weight: 600;
+}
+input,select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border:  1px solid #ccc;
+}
+#btnRegister{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    background-color: #007bff;
+    border: none;
+
+}
+#btnRegister:hover{
+    background-color: #0056b3;
+}
+
+/* view students */
+.container-register{
+    width: 100%;
+    padding: 40px;
+}
+table{
+    width: 100%;
+    font-size: 0.9rem;
+    border-collapse: collapse;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+th,td{
+    border: 2px solid #ccc;
+    padding: 10px;
+    
+}
+th{
+    color: white;
+    background-color: #007bff;
+}
+.back-btn,.container-register a{
+    padding: 15px;
+    margin-top: 2vh;
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    background-color: #007bff;
+    border: none;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* update-student */
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .message {
+      margin-top: 15px;
+      font-weight: bold;
+      color: green;
+      text-align: center;
+    }
+/* delete student */
+
+.delete-button {
+      background-color: #dc3545;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .delete-button:hover {
+      background-color: #c82333;
+    }
+
+    .error {
+      color: red;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        vertical-align: top;
+    }
+
+    th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    tr:hover {
+        background-color: #f9f9f9;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-top: 20px;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    .back-btn:hover {
+        background-color: #0056b3;
+    } */

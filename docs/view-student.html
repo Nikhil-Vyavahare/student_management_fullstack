@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>View All Students</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container-register">
+  <h2>All Registered Students</h2>
+  <table id="studentsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+        <th>DOB</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Pincode</th>
+        <th>Enrollment Date</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+     
+    </tbody>
+  </table>
+
+  <a href="index.html" class="back-btn">⬅ Back to Home</a>
+</div>
+
+<script>
+  async function loadStudents() {
+    const url = "http://localhost:8080/students/read";
+
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+      const students = await response.json();
+      const tableBody = document.getElementById("tbody");
+      tableBody.innerHTML = '';
+
+      students.forEach(student => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${student.studentId}</td>
+          <td>${student.firstName}</td>
+          <td>${student.lastName}</td>
+          <td>${student.gender}</td>
+          <td>${formatDate(student.dateOfBirth)}</td>
+          <td>${student.email}</td>
+          <td>${student.phone}</td>
+          <td>${student.address}</td>
+          <td>${student.city}</td>
+          <td>${student.state}</td>
+          <td>${student.pincode}</td>
+          <td>${student.enrollmentDate}</td>
+          <td>${student.course}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+
+    } catch (error) {
+      console.error("Failed to fetch students:", error);
+    }
+  }
+function formatDate(dateString) {
+  if (!dateString) return '';
+  const date = new Date(dateString);
+  return date.toISOString().split('T')[0]; // returns YYYY-MM-DD
+}
+
+window.onload = loadStudents;
+</script>
+</body>
+</html>

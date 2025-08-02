@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Delete Student</title>
+<body>
+
+<div class="container">
+  <h2>Delete Student</h2>
+
+  <label for="studentId">Enter Student ID to Delete:</label>
+  <input type="number" id="studentId" placeholder="e.g., 101">
+
+  <button class="delete-button" onclick="deleteStudent()">Delete Student</button>
+
+  <div class="message" id="message"></div>
+
+  <a href="index.html" class="back-btn">⬅ Back to Home</a>
+</div>
+<script>
+  async function deleteStudent() {
+    const studentId = document.getElementById("studentId").value;
+    const messageDiv = document.getElementById("message");
+
+    if (!studentId) {
+      messageDiv.textContent = "Please enter a student ID.";
+      messageDiv.style.color = "red";
+      return;
+    }
+
+    const confirmDelete = confirm(`Are you sure you want to delete student with ID ${studentId}?`);
+    if (!confirmDelete) return;
+
+    try {
+      const response = await fetch(`http://localhost:8080/students/${studentId}`, {
+        method: "DELETE"
+      });
+
+      if (response.ok) {
+        messageDiv.textContent = `Student with ID ${studentId} deleted successfully.`;
+        messageDiv.style.color = "green";
+        document.getElementById("studentId").value = "";
+      } else {
+        const error = await response.text();
+        messageDiv.textContent = `Failed to delete student: ${error}`;
+        messageDiv.style.color = "red";
+      }
+    } catch (err) {
+      console.error(err);
+      messageDiv.textContent = "Error occurred while deleting student.";
+      messageDiv.style.color = "red";
+    }
+  }
+</script>
+</body>
+</html>
