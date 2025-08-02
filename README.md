@@ -36,23 +36,6 @@ A simple web application for managing student data. Built using **Spring Boot** 
 
 ---
 
-## 🖼️ Screenshots
-
-### 🏠 Home Page
-![Home Page](screenshots/home.png)
-
-### 📑 View All Students
-![View Page](screenshots/view.png)
-
-### 📝 Update Student
-![Update Page](screenshots/update.png)
-
-### 🗑️ Delete Student
-![Delete Page](screenshots/delete.png)
-![Delete2 Page](screenshots/delete2.png)
-
----
-
 ## 📌 Features
 
 - 📋 **Register Students**  
@@ -89,6 +72,9 @@ A simple web application for managing student data. Built using **Spring Boot** 
 
 ### 🏠 Home Page
 ![Home Page](screenshots/home.png)
+
+📋 **Register Students**  
+  ![Form Page](screenshots/form.png)
 
 ### 📑 View All Students
 ![View Page](screenshots/view.png)
