@@ -115,11 +115,13 @@ A simple web application for managing student data. Built using **Spring Boot** 
 
 ---
 
-## ✍️ Developer Info
+## 🧑‍💻 Authors
 
-**👨‍💻 Nikhil Vyavahare**  
-📧 [nikhilvyavahare2@gmail.com](mailto:nikhilvyavahare2@gmail.com)  
-🌐 [GitHub Profile](https://github.com/Nikhil-Vyavahare)
+Developed by 
+1) NIKHIL RAJU VYAVAHARE
+2) SANKET SUNILKUMAR BEDAGE
+3) VIVEK KESHAV HAVALE
+4) ANIKET MADANLAL SUTAR
 
 ---
 
